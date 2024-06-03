@@ -1,0 +1,33 @@
+<%- include('./includes/header.ejs') %>
+    <tr>
+        <td style="padding: 20px; text-align: center; background-color: #164765; color: #ffffff;">
+            <h1 style="margin: 0;">Reset Password</h1>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 20px;">
+            <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #333333;">
+                Dear <%= receiver %>,
+            </p>
+            <p style="margin: 16px 0 0 0; font-size: 16px; line-height: 1.5; color: #333333;">
+                Thank you for registering with Airseat. To activate your account, please use the following One-Time
+                Password (OTP) code:
+            </p>
+            <p style="margin: 30px 0 30px 0; font-size: 16px; line-height: 1.5; color: #333333;">
+                <b>Token : <%= token %></b>
+            </p>
+            <p style="margin: 0 0 0 0; font-size: 16px; line-height: 1.5; color: #333333;">
+                This OTP code is valid for 1 hour. If this OTP code expires, you can request a new OTP through the
+                activation page.
+                <br>
+                Thank you for your attention.
+                <br>
+                <br>
+                Best regards,
+                <br>
+                <br>
+                <br>
+                Airseat
+            </p>
+
+            <%- include('./includes/footer.ejs') %>

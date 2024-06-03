@@ -13,6 +13,8 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
 
+app.set("view engine", "ejs");
+
 app.use((req, res, next) => {
   req.requestTime = new Date();
   next();
